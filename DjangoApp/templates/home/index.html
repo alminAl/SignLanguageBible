@@ -1,10 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
 <html>
   <head>
-    <title>Video Live Stream</title>
+    <title>OpenCV Video Examples - Camera</title>
   </head>
+
   <body>
-    <h1>Video Live Stream</h1>
-    <img src="{% url 'video_feed' %}">
-   
+    <h1>OpenCV Camera</h1>
+    <video id="cam_input" height="480" width="640"></video>
+    <script async  src="{% static '/home/opencv.js' %}" onload="openCvReady();"></script>
+
+    <script type="text/javascript" src="{% static '/home/index.js' %}"></script>
   </body>
 </html>
