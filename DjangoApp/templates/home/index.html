@@ -7,8 +7,12 @@
 
   <body>
     <h1>OpenCV Camera</h1>
-    <video id="cam_input" height="480" width="640"></video>
-    <script async  src="{% static '/home/opencv.js' %}" onload="openCvReady();"></script>
+    <div>
+      <video id="cam_input"></video>
+    </div>
+    <div>
+      <canvas id="canvas" width="1280" height="720"></canvas>
+    </div>
 
     <script type="text/javascript" src="{% static '/home/index.js' %}"></script>
   </body>
